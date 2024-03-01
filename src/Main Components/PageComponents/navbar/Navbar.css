@@ -1,0 +1,92 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wapper{
+}
+
+.navbar{
+    background-color: white;
+    margin: 25px 0px;
+    position: sticky;
+    z-index: 1000;
+    top: 0;
+    border-top: 1px solid 1px;
+}
+
+.navbar .wapper{
+    height: 100px;
+    margin: 0px 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .navlogo h1{
+    color: #484848;
+    font-family: 'Volkhov', serif;
+    font-size: 52px;
+    font-weight: 400;
+}
+
+
+
+.navbar .navitem ul{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.navbar .navitem ul{
+   list-style: none;
+}
+
+.navbar .navitem ul li a{
+    text-decoration: none;
+    color: #b3d9ff;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 10px 10px;
+    cursor: pointer;
+    transition: color 0.4s ease;
+    font-family: 'Poppins', sans-serif;
+    color: #484848;
+}
+
+.navbar .navitem ul li a:hover{
+    border-bottom: 3px solid black;
+}
+
+
+.navbar .navitem ul button{
+    text-decoration: none;
+    border-radius: 10px;
+    background-color: black;
+    height: 56px;
+    width: 152px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 400;
+    transition: color 0.4s ease;
+    color: white;
+    box-sizing: border-box;
+}
+
+.navbar .navitem ul button a{
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+}
+
+.navbar .navitem ul button a:hover{
+    color: black;
+}
+
+.navbar .navitem ul button:hover{
+    color: black;
+    border: 3px solid black;
+    background-color: white;
+    font-weight: 500;
+}

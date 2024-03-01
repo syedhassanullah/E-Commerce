@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.cardmain{
+    margin: 100px 15%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.cardshop1{
+    font-family: 'Poppins' ,sans-serif;
+    width: 350px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: white;
+    box-shadow: 2px 5px 25px rgba(0, 0, 0, 0.2);
+    margin-top: 60px;
+}
+
+
+
+.cimg{
+    margin-top: 15px;
+    height: 250px;
+    width: 315px;
+    border-radius: 12px;
+    background-image: url(../../imgs/c1.jpg);
+    background-size: 40rem;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+.ctext1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.ctext1 h2{
+    font-weight: 500;
+    font-size: 7px;
+}
+
+.ctext1 .rating{
+    font-size: 12px;
+}
+
+.cardshop .alkaram{
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.cardshop h3{
+    margin: 12px 0px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.ctext2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 18px;
+}
+
+.ctext2 h2{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.ctext2 p{
+    font-size: 12px;
+    color: red;
+}

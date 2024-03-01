@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.body{
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.card{
+    width: 1050px;
+    height: 600px;
+    border: 1px solid #DBDBDB;
+    display: flex;
+}
+
+.card .img{
+    width: 48%;
+    background-color: black;
+    background-image: url(../imgs/loginimg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    background-size: 900px;
+}
+
+.card .img2{
+    width: 48%;
+    background-color: black;
+    background-image: url(../imgs/loginimg2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    background-size: 900px;
+}
+
+.card .text{
+    width: 52%; 
+    padding: 30px 90px 15px 90px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card .texta{
+    width: 52%; 
+    padding: 30px 70px 15px 50px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card .text h2{
+    font-family: 'Volkhov', serif;
+    color: #484848;
+    font-size: 40px;
+    font-weight: 300;
+}
+
+
+.text2a{
+    padding-right: 90px;
+    text-align: center;
+}
+
+
+.card .text2{
+    text-align: center;
+}
+
+.card .text2 h3{
+    font-family: 'Volkhov', serif;
+    text-align: start;
+    margin-bottom: 30px;
+    font-size: 15px;
+}
+
+
+.social{
+    display: flex;
+    margin-bottom: 25px;
+}
+
+.social .email{
+    margin-left: 40px;
+}
+
+.social .google{
+    height: 28px;
+    border: 1px solid #5B86E5 ;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+    width: 150px;
+    padding: 0px 10px;
+    cursor: pointer;
+}
+
+
+
+
+.social .google img{
+    width: 16px;
+    height: 16px;
+}
+
+
+
+.card .text2 .name1{
+    display: flex;
+}
+.card .text2 .name2{
+    display: flex;
+}
+
+.card .text2 input{
+    width: 100%;
+    text-decoration: none;
+    border: none;
+    border-bottom: 1px solid #DBDBDB;
+    margin-top: 8px;
+    line-height: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px;
+}
+
+.card .text2 .main{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 30px;
+    width: 300px;
+    border: none;
+    background-color: #5B86E5;
+    color: aliceblue;
+    margin-top: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.card .text2 .main2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 30px;
+    width: 300px;
+    border: none;
+    background-color: black;
+    color: aliceblue;
+    margin-top: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.card .text2 .main3{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 30px;
+    width: 300px;
+    border: none;
+    background-color: transparent;
+    color: #5B86E5;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 2px solid #5B86E5;
+}
+
+.card .text3 p{
+    text-align: end;
+    font-size: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.card .text2 p{
+    line-height: 45px;
+    font-size: 11px;
+    font-family: 'Poppins',sans-serif;
+}
+
+.card .text2 .resend{
+    border: none;
+    background-color: transparent;
+    color: #5B86E5;
+    cursor: pointer;
+}
+.card .text2 .resend2{
+    border: none;
+    background-color: transparent;
+    color: #5B86E5;
+    cursor: pointer;
+    text-align: end;
+    font-size: 10px;
+    font-weight: 800;
+    margin-right: 20px;
+    line-height: 30px;
+}
