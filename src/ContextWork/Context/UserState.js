@@ -1,18 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import UserContext from "./UserContext";
 
 
 const UserState = (props) =>{
-
-    const UserDetail ={
+    
+    const [UserDetail,SetUserDetail] = useState({
         name: "Hassan",
-        fname: "khan",
-        address: "House # xyz",
-    };
-
+        password: " "
+    });
+    
+    
     return(
         <>
-        <UserContext.Provider value={UserDetail}>
+        <UserContext.Provider value={{UserDetail,SetUserDetail}}>
             {props.children}
         </UserContext.Provider>
         </>

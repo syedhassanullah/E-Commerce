@@ -16,6 +16,8 @@ export default function User1() {
     <br/>
     <br/>
     <br/>
+    <h1>name: {PData.name}</h1>
+    <h1>name: {PData.detail}</h1>
     
 
     </>
