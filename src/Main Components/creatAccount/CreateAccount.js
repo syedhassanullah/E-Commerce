@@ -1,12 +1,13 @@
-import React, { useContext, useRef, useState } from 'react'
+import React, { useRef } from 'react'
 import google from '../imgs/google.png'
 import email from '../imgs/email.png'
-import UserContext from '../../ContextWork/Context/UserContext'
-import { Link } from 'react-router-dom'
+// import UserContext from '../../ContextWork/Context/UserContext'
+import { Link, useNavigate } from 'react-router-dom'
 
 function CreateAccount() {
 
-  const detail = useContext(UserContext);
+  // const detail = useContext(UserContext);
+  const navigate = useNavigate();
   
   
   const email2 = useRef("")
@@ -31,19 +32,27 @@ function CreateAccount() {
     }
     
     
-    detail.SetUserDetail(newUserDetail);
+    // detail.SetUserDetail(newUserDetail);
     console.log(newUserDetail)
     
     if (fname.current.value === ""){
       alert("First Name is required")
-    }else if(lname.current.value){
+    }else if(lname.current.value === ""){
       alert("Last Name is required")
-    }else if(password.current.value.length < 6){
+    }else if(password.current.value.length <= 6){
       alert("password greater then 6 digits")
+    }else{
+      
+      
+      localStorage.setItem('userdetail',JSON.stringify(newUserDetail));
+      navigate ('/signin')
+
     }
     
-    localStorage.setItem('userdetail',JSON.stringify(newUserDetail));
+
+    
   };
+  
   
   
   
