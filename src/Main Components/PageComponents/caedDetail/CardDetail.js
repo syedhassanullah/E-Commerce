@@ -2,28 +2,47 @@ import React, { useEffect, useState } from 'react'
 import { useLocation, useParams } from 'react-router-dom'
 import './CardDetail.css'
 
-export const CardDetail = () => {
+// export const CardDetail = () => {
 
-  let params = useParams();
-  let location = useLocation();
-  const {title} = location.state;
+//   let params = useParams();
+//   let location = useLocation();
+//   const {title} = location.state;
 
-  const[pDetail, setpDetail] = useState();
+//   const[pDetail, setpDetail] = useState();
+
+//   useEffect(() => {
+//     getspDetail();
+//   }, []);
+
+
+//   const getspDetail = () =>{
+//     console.log(params.cardid)
+//     fetch(`https://jsonplaceholder.typicode.com/todos/${params.cardid}`)
+//     .then((response) => response.json())
+//     .then((json) => {
+//       setpDetail(json);
+//     });
+//   }
+
+
+export const CardDetail = ({ match }) => {
+  const { cardid } = match.params;
+  const { state: { title } } = useLocation();
+  const [pDetail, setpDetail] = useState();
 
   useEffect(() => {
+    const getspDetail = () => {
+      console.log(cardid);
+      fetch(`https://jsonplaceholder.typicode.com/todos/${cardid}`)
+        .then((response) => response.json())
+        .then((json) => {
+          setpDetail(json);
+        });
+    };
     getspDetail();
-  }, [getspDetail]);
+  }, [cardid]);
 
-
-  const getspDetail = () =>{
-    console.log(params.cardid)
-    fetch(`https://jsonplaceholder.typicode.com/todos/${params.cardid}`)
-    .then((response) => response.json())
-    .then((json) => {
-      setpDetail(json);
-    });
-  }
-
+  
   return (
     <>
     <div className='card-detail'>
