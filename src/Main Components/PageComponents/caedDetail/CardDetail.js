@@ -12,7 +12,7 @@ export const CardDetail = () => {
 
   useEffect(() => {
     getspDetail();
-  }, []);
+  }, [getspDetail]);
 
 
   const getspDetail = () =>{
