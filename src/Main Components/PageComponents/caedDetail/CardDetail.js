@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { useLocation, useParams } from 'react-router-dom'
+import { useLocation} from 'react-router-dom'
 import './CardDetail.css'
 
 // export const CardDetail = () => {
@@ -42,7 +42,7 @@ export const CardDetail = ({ match }) => {
     getspDetail();
   }, [cardid]);
 
-  
+
   return (
     <>
     <div className='card-detail'>
