@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { useLocation} from 'react-router-dom'
+import { useLocation, useParams} from 'react-router-dom'
 import './CardDetail.css'
 
 // export const CardDetail = () => {
@@ -25,8 +25,8 @@ import './CardDetail.css'
 //   }
 
 
-export const CardDetail = ({ match }) => {
-  const { cardid } = match.params;
+export const CardDetail = () => {
+  const { cardid } = useParams();
   const { state: { title } } = useLocation();
   const [pDetail, setpDetail] = useState();
 

@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Forget() {
   return (
@@ -20,7 +21,7 @@ function Forget() {
             <input style={{ marginLeft: '8px' }} type="" name="" id="" placeholder='Phone Number'/>
             </div>
             <button className='main2'>Send Confirmation Code</button>
-            <p>Already have an Account? <button className='resend'>Login</button></p>
+            <p>Already have an Account? <button className='resend'><Link to = {'/Signin'}>Login</Link></button></p>
           </div>
           <div className='text3'>
             <p>FASCO Terms & Conditions</p>
