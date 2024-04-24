@@ -3,8 +3,25 @@
     padding: 0;
 }
 
-.cardmain{
+.all{
+    text-align: center;
     margin: 100px 15%;
+}
+
+.all .title1{
+    font-size: 3rem;
+    color: rgb(77, 77, 77);
+    padding-bottom: 5px;
+}
+.all .para{
+    font-family: 'Lucida Sans';
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 15px;
+    color: grey;
+}
+.cardmain{
+    margin-bottom: 35px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -17,24 +34,25 @@ a{
 
 .cardshop1{
     font-family: 'Poppins' ,sans-serif;
-    width: 350px;
+    width: 290px;
     align-items: center;
     justify-content: center;
     display: flex;
     background-color: white;
     box-shadow: 2px 5px 25px rgba(0, 0, 0, 0.2);
     margin-top: 60px;
+    border-radius: 10px;
 }
 
 
 
 .cimg{
     margin-top: 15px;
-    height: 250px;
-    width: 315px;
+    height: 185px;
+    width: 255px;
     border-radius: 12px;
     background-image: url(../../imgs/c1.jpg);
-    background-size: 40rem;
+    background-size: 32rem;
     background-position: top;
     background-repeat: no-repeat;
 }
@@ -44,11 +62,12 @@ a{
     align-items: center;
     justify-content: space-between;
     margin-top: 10px;
+    box-sizing: content-box;
 }
 
 .ctext1 h2{
     font-weight: 500;
-    font-size: 7px;
+    font-size: 5px;
 }
 
 .ctext1 .rating{
@@ -81,4 +100,47 @@ a{
 .ctext2 p{
     font-size: 12px;
     color: red;
+}
+
+.blackbt{
+    font-size: 15px;
+    font-weight: ;
+    background-color: black;
+    color: white;
+    padding: 12px 35px;
+    margin-top: 20px;
+    border-radius: 10px;
+    transition: 0.5s all ease;
+}
+
+.blackbt:hover{
+    color: #000;
+    background-color: #fff; 
+    box-shadow: 
+        -1px -1px 0 #000,  
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000; 
+}
+
+.blackbt1{
+    font-size: 15px;
+    font-weight: ;
+    background-color: rgb(230, 228, 228);
+    color: #000;
+    padding: 12px 29px;
+    margin-top: 20px;
+    border-radius: 8px;
+    transition: 0.5s all ease;
+    border: none;
+}
+
+.blackbt1:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+.btsec{
+    display: flex;
+    justify-content: space-evenly;
 }

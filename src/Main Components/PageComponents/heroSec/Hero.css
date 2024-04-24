@@ -7,7 +7,7 @@
 .hero{
     margin: 0px 15%;
     background-color: white;
-    height: 750px;
+    height: 90vh;
     display: flex;
     justify-content: space-between;
 }
@@ -18,11 +18,90 @@
     background-color: #E0E0E0;
     border-radius: 10px;
     background-image: url(../../imgs/hero1.png);
-    background-size: contain;
-    background-position: center;
+    background-size: cover;
+    background-position: -38px 100px;
     background-repeat: no-repeat;
 }
 
+.hero2{
+    width: 34%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hero2a{
+    width: 100%;
+    background-color: #E0E0E0;
+    border-radius: 10px;
+    height: 140px;
+    background-image: url(../../imgs/hero\ center4.png);
+    background-size: cover;
+    padding-top: 10px;
+}
+
+.hero2b{
+    width: 100%;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.hero2b h2{
+    font-size: 4.5rem;
+    color: rgb(77, 77, 77);
+}
+
+
+.hero2b h1{
+    font-size: 7.5rem;
+    color: #fff; /* Set the text color */
+    text-shadow: 
+        -1px -1px 0 #000,  
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000; /* Add an outline effect */
+}
+
+.hero2b p{
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(77, 77, 77);
+}
+
+.hero2b .blackbt{
+    font-size: 15px;
+    font-weight: ;
+    background-color: black;
+    color: white;
+    padding: 12px 35px;
+    margin-top: 20px;
+    border-radius: 10px;
+    transition: 0.5s all ease;
+}
+
+.hero2b .blackbt:hover{
+    font-weight: 600;
+    color: #000;
+    background-color: #fff; 
+    box-shadow: 
+        -1px -1px 0 #000,  
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000; 
+}
+
+.hero2c{
+    width: 100%;
+    background-color: #E0E0E0;
+    border-radius: 10px;
+    height: 140px;
+    background-image: url(../../imgs/herocenter\ 2.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0px -120px;
+    padding-top: 100px;
+    margin-top: 10px;
+}
 
 .hero3{
     width: 31%;
@@ -30,7 +109,7 @@
     background-color: #E0E0E0;
     border-radius: 10px;
     background-image: url(../../imgs/hero2.png);
-    background-size: contain;
-    background-position: center;
+    background-size: cover;
+    background-position: -55px 100px;
     background-repeat: no-repeat;
 }

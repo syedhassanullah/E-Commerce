@@ -20,8 +20,16 @@ function CardSec() {
 
     return (
         <>
-
-
+        <div className='all'>
+            <h1 className='title1'>New Arrivals</h1>
+            <p className='para'>Random text If none of the above steps resolve the issue, there may be a <br/>hardware problem with either your computer or the LCD monitor, and</p>
+        <div className='btsec'>
+        <button className='blackbt1'>Men's Fasion</button>
+        <button className='blackbt1'>Women's Fasion</button>
+        <button className='blackbt1'>Women Accessories</button>
+        <button className='blackbt1'>Man Accessories</button>
+        <button className='blackbt1'>Discount Deals</button>
+        </div>
             <div className='cardmain'>
 
                 {
@@ -51,6 +59,8 @@ function CardSec() {
                     return null;
                     })}
 
+            </div>
+            <button className='blackbt'>view more</button>
             </div>
         </>
     )
