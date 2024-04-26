@@ -1,12 +1,14 @@
 import React from 'react'
-
+import peaky from '../../imgs/peaky.png'
 import './Slides.css';
 
 
 const Slides = () => {
   return (
     <section className='slidemain'>
-        <div class="parallelogram"></div>
+        <div class="parallelogram">
+          
+        </div>
         <div className='sliderighttext'>
           <p>Women Collection</p>
           <h1>Peaky Blinders</h1>
