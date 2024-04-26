@@ -1,5 +1,4 @@
 import React from 'react'
-import peaky from '../../imgs/peaky.png'
 import './Slides.css';
 
 
