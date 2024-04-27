@@ -8,6 +8,7 @@ const Slides = () => {
         <div class="parallelogram">
           
         </div>
+        <div className='pimg'></div>
         <div className='sliderighttext'>
           <p>Women Collection</p>
           <h1>Peaky Blinders</h1>
