@@ -13,7 +13,7 @@ import { createBrowserRouter } from 'react-router-dom';
 
 export const router = createBrowserRouter([
     {
-      path: "/",
+      path: "/home",
       element: <Home/>,
       Loader: () => {
         let posts = fetch ("https://jsonplaceholder.typicode.com/photos")
@@ -44,7 +44,7 @@ export const router = createBrowserRouter([
     },
   
     {
-      path: "/signup",
+      path: "/",
       element: <CreateAccount/>
     },
   

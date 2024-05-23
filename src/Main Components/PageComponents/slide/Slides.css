@@ -44,6 +44,7 @@
     transition: 0.5s all ease;
     border: none;
     width: 150px;
+    cursor: pointer;
 }
 
 .sliderighttext .blackbt1:hover {

@@ -111,6 +111,7 @@ a{
     margin-top: 20px;
     border-radius: 10px;
     transition: 0.5s all ease;
+    cursor: pointer;
 }
 
 .blackbt:hover{
@@ -133,6 +134,7 @@ a{
     border-radius: 8px;
     transition: 0.5s all ease;
     border: none;
+    cursor: pointer;
 }
 
 .blackbt1:hover{
