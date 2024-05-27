@@ -3,6 +3,8 @@ import google from '../imgs/google.png'
 import email from '../imgs/email.png'
 // import UserContext from '../../ContextWork/Context/UserContext'
 import { Link, useNavigate } from 'react-router-dom'
+import Axios  from 'axios';
+
 
 function CreateAccount() {
 
@@ -12,6 +14,7 @@ function CreateAccount() {
   
   const email2 = useRef("")
   const password = useRef("")
+  const cpassword = useRef("")
   const fname = useRef("")
   const lname = useRef("")
   const pnum = useRef("")
@@ -21,14 +24,16 @@ function CreateAccount() {
     console.log(lname.current.value)
     console.log(email2.current.value)
     console.log(pnum.current.value)
-    console.log(password.current.value)
+    console.log(password.current.value) 
+    console.log(cpassword.current.value)
 
     const newUserDetail ={
       email: email2.current.value,
       password: password.current.value,
       fname: fname.current.value,
       lname: lname.current.value,
-      number: pnum.current.value
+      phone: pnum.current.value,
+      cpassword: cpassword.current.value
     }
     
     
@@ -42,10 +47,18 @@ function CreateAccount() {
     }else if(password.current.value.length <= 6){
       alert("password greater then 6 digits")
     }else{
+
+      Axios.post('http://localhost:5000/register',newUserDetail)
+      .then(function (response) {
+        console.log("AXIOS RESPONSE",response);
+      })
+      .catch(function (error) {
+        console.log("AXIOS error",error);
+      });
       
       
-      localStorage.setItem('userdetail',JSON.stringify(newUserDetail));
-      navigate ('/signin')
+      // localStorage.setItem('userdetail',JSON.stringify(newUserDetail));
+      // navigate ('/signin')
 
     }
     
@@ -87,7 +100,7 @@ function CreateAccount() {
               </div>
               <div className='name2'>
                 <input type="password" name="" id="" placeholder='password' ref={password} />
-                <input style={{ marginLeft: '8px' }} type="password" name="" id="" placeholder='confirmation password' />
+                <input style={{ marginLeft: '8px' }} type="password" name="" id="" ref={cpassword} placeholder='confirmation password' />
               </div>
               <button className='main2' onClick={SignUpNow}>Create Account</button>
 

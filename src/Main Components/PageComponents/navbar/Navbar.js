@@ -13,7 +13,7 @@ function Navbar() {
             <div className='navitem'>
             <ul>
                 <li>
-                    <Link to={"/"}>
+                    <Link to={"/home"}>
                         Home
                     </Link>
                 </li>
@@ -38,7 +38,7 @@ function Navbar() {
                     </Link>
                 </li>
                 <button>
-                    <Link to={"/signup"}>
+                    <Link to={"/"}>
                         Sign Up
                     </Link>
                 </button>
