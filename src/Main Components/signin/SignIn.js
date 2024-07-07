@@ -1,13 +1,14 @@
 import React, { useRef,useContext } from 'react'
 import google from '../imgs/google.png'
 import email from '../imgs/email.png'
-import { Link } from 'react-router-dom'
-import UserContext from '../../ContextWork/Context/UserContext'
+import { Link, useNavigate ,} from 'react-router-dom'
+import UserContext from '../../ContextWork/Context/UserContext';
+import Axios  from 'axios';
 
 function SignIn() {
 
   const detail = useContext(UserContext)
-
+  const Navigate = useNavigate();
   const email1 = useRef("")
   const pas = useRef("")
 
@@ -18,8 +19,25 @@ function SignIn() {
     detail.SetUserDetail({
       ...detail.UserDetail,
     email: email1.current.value,
-    password: pas.current.value,
+    password: pas.current.value
   });
+
+  const loginUserDetail ={
+    email: email1.current.value,
+    password: pas.current.value
+  }
+
+  Axios.post('http://localhost:5000/signin',loginUserDetail)
+      .then(function (response) {
+        console.log("AXIOS RESPONSE",response);
+        alert("Login Successfully");
+        Navigate('/home')
+      })
+      .catch(function (error) {
+        console.log("AXIOS error",error);
+      });
+      
+
   };
  
   return (

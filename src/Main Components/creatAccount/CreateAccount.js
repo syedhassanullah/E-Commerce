@@ -44,13 +44,15 @@ function CreateAccount() {
       alert("First Name is required")
     }else if(lname.current.value === ""){
       alert("Last Name is required")
-    }else if(password.current.value.length <= 6){
+    }else if(password.current.value.length <= 2){
       alert("password greater then 6 digits")
-    }else{
+    }else{  
 
       Axios.post('http://localhost:5000/register',newUserDetail)
       .then(function (response) {
         console.log("AXIOS RESPONSE",response);
+        alert("accout has been created");
+        navigate('/signin');
       })
       .catch(function (error) {
         console.log("AXIOS error",error);
